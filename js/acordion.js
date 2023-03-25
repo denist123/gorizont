@@ -6,12 +6,11 @@ let accordeon = () => {
       
       chButton.addEventListener('click', () => {
          chItems.forEach(item => {
-            const chButton2 = item.querySelector('._label__title');
             const chContent2 = item.querySelector('._label__description');
-            chButton2.classList.remove('active');
+            chContent2.classList.remove('_active');
             chContent2.style.height = '';
          })
-         chButton.classList.add('active');
+         chContent.classList.remove('_active');
          chContent.style.height = chContent.scrollHeight + 'px';
       })
    })

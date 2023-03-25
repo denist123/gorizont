@@ -273,6 +273,9 @@
   -webkit-transition: height 0.4s ease-in-out;
   transition: height 0.4s ease-in-out;
 }
+._label__description._active {
+  height: auto;
+}
 ._label__title:focus {
   outline: none;
 }
