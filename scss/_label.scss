@@ -1,0 +1,97 @@
+._label{
+   &__wrap{
+      display: flex;
+      justify-content: space-between;
+      margin: 60px 0;
+   }
+   &__slider{
+      width: 300px;
+      height: 300px;
+      border: 1px solid black;
+   }
+   &__list {
+      max-width: 920px;
+    }
+    
+    &__item {
+      margin-bottom: 15px;
+    }
+    
+    &__title {
+      position: relative;
+      width: 100%;
+      padding: 12px 30px;
+      background-color: transparent;
+      text-align: left;
+      &:after {
+        content: "";
+        position: absolute;
+        right: 15px;
+        bottom: 15px;
+        width: 17px;
+        height: 17px;
+        border: 1px solid;
+        border-color: transparent #000 #000 transparent;
+        -webkit-transform: rotate(45deg);
+                transform: rotate(45deg);
+        -webkit-transition: border-color 0.4s ease-in-out, bottom 0.4s ease-in-out;
+        transition: border-color 0.4s ease-in-out, bottom 0.4s ease-in-out;
+      }
+    }
+    
+    
+    &__title.active:after {
+      border-color: #000 transparent transparent #000;
+      bottom: 5px;
+    }
+    
+    &__description {
+      margin-top: -2px;
+      border: 1px solid;
+      border-color: transparent #000 #000 #000;
+      height: 0;
+      overflow: hidden;
+      -webkit-transition: height 0.4s ease-in-out;
+      transition: height 0.4s ease-in-out;
+    }
+    
+    &__title:focus {
+      outline: none;
+    }
+    
+    &__description.active {
+      height: auto;
+    }
+    
+    &__item-description {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+    }
+    
+    &__item-description {
+      padding: 15px 0;
+    }
+    
+    &__item-description p {
+      margin: 0 15px;
+    }
+    
+    &__item-description p:last-child {
+      text-align: right;
+    }
+    
+    &__item-description:first-child {
+      padding-top: 30px;
+    }
+    
+    &__item-description:last-child {
+      padding-bottom: 30px;
+    }
+}
