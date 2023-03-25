@@ -276,9 +276,6 @@
 ._label__title:focus {
   outline: none;
 }
-._label__description.active {
-  height: auto;
-}
 ._label__item-description {
   display: -webkit-box;
   display: -ms-flexbox;
