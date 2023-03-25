@@ -1,0 +1,13 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "Inter-Regular";
+  src: url("../fonts/Inter-Regular.eot");
+  src: local("☺"), url("../fonts/Inter-Regular.woff") format("woff"), url("../fonts/Inter-Regular.ttf") format("truetype"), url("../fonts/Inter-Regular.svg") format("svg");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Montserrat-SemiBold";
+  src: url("../fonts/Montserrat-SemiBold.eot");
+  src: local("☺"), url("../fonts/Montserrat-SemiBold.woff") format("woff"), url("../fonts/Montserrat-SemiBold.ttf") format("truetype"), url("../fonts/Montserrat-SemiBold.svg") format("svg");
+  font-weight: 600;
+}

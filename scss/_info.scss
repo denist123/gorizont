@@ -1,0 +1,34 @@
+.info{
+   padding: 40px 0;
+   &__title{
+      color: rgba(254,204,0,0.95);
+      font-size: 58px;
+      line-height: 102px;
+      font-weight: normal;
+   }
+   &__wrap{
+      display: flex;
+   }
+   &__leftblock{
+      margin-left: 40px;
+   }
+   &__text{
+      line-height: 24px;
+      font-size: 16px;
+      span{
+         padding-left: 40px;
+      }
+      &:not(:last-child){
+         margin-bottom: 30px;
+      }
+   }
+   .none{
+      width: 400px;
+      height: 200px;
+      background-color: orange;
+      margin-top: 40px;
+   }
+   &__rightblock{
+      margin-left: 30px;
+   }
+}
