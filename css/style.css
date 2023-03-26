@@ -229,52 +229,60 @@
   margin: 60px 0;
 }
 ._label__slider {
-  width: 300px;
-  height: 300px;
-  border: 1px solid black;
+  max-width: 400px;
 }
 ._label__list {
-  max-width: 920px;
+  max-width: 500px;
+  width: 100%;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
 }
 ._label__item {
-  margin-bottom: 15px;
+  background-color: #fff;
+  border: 2px solid #E8E8E8;
 }
 ._label__title {
   position: relative;
+  background-color: #fff;
   width: 100%;
   padding: 12px 30px;
-  background-color: transparent;
+  padding-left: 20px;
   text-align: left;
+  color: #757575;
+  font-size: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
-._label__title:after {
-  content: "";
-  position: absolute;
-  right: 15px;
-  bottom: 15px;
-  width: 17px;
-  height: 17px;
-  border: 1px solid;
-  border-color: transparent #000 #000 transparent;
-  -webkit-transform: rotate(45deg);
-  transform: rotate(45deg);
-  -webkit-transition: border-color 0.4s ease-in-out, bottom 0.4s ease-in-out;
-  transition: border-color 0.4s ease-in-out, bottom 0.4s ease-in-out;
-}
-._label__title.active:after {
-  border-color: #000 transparent transparent #000;
-  bottom: 5px;
+._label__icon {
+  width: 28px;
+  height: 26px;
+  background-color: #639ea4;
+  padding: 5px;
+  margin-right: 10px;
 }
 ._label__description {
   margin-top: -2px;
-  border: 1px solid;
-  border-color: transparent #000 #000 #000;
+  padding: 0 20px;
+  color: #666;
+  font-size: 15px;
+  line-height: 21px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   height: 0;
   overflow: hidden;
   -webkit-transition: height 0.4s ease-in-out;
   transition: height 0.4s ease-in-out;
 }
-._label__description._active {
-  height: auto;
+._label__description img {
+  width: 100%;
+  height: 100%;
 }
 ._label__title:focus {
   outline: none;

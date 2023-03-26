@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
+   <title></title>
+   <link rel="shortcut icon" href="img/favicon.ico_4291890206"/>
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,10 +10,75 @@
 	<link rel="stylesheet" href="css/nullstyle.css">
 	<link rel="stylesheet" href="css/style.css">
    <link rel="stylesheet" href="css/swiper-bundle.min.css">
-   <script defer src="js/swiper-bundle.min.js"></script>
+   <script defer src="js/swiper-element-bundle.min.js"></script>
    <script defer src="js/acordion.js"></script>
    <script defer src="js/script.js"></script>
-   <title></title>
+   <style>
+  
+      swiper-container {
+        width: 100%;
+        height: 100%;
+      }
+  
+      swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+  
+      swiper-slide img {
+         display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+  
+      swiper-container {
+        width: 100%;
+        height: 300px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+  
+      swiper-slide {
+        background-size: cover;
+        background-position: center;
+      }
+  
+      .mySwiper {
+        height: 80%;
+        width: 100%;
+      }
+  
+      .mySwiper2 {
+        height: 20%;
+        box-sizing: border-box;
+        padding: 10px 0;
+      }
+  
+      .mySwiper2 swiper-slide {
+        width: 25%;
+        height: 100%;
+        opacity: 0.4;
+      }
+  
+      .mySwiper2 .swiper-slide-thumb-active {
+        opacity: 1;
+      }
+  
+      swiper-slide img {
+         display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      .swiper-button-next, .swiper-button-prev{
+         color: #000;
+      }
+    </style>
 </head>
 <body>
    <div class="wrapper">
@@ -54,62 +121,71 @@
             <div class="_label__container">
                <div class="_label__wrap">
                   <section class="_label__slider">
+                     <swiper-container style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff" class="mySwiper"
+                     thumbs-swiper=".mySwiper2" space-between="10" navigation="true">
+                        <swiper-slide>
+                           <img src="img/01.jpg" />
+                        </swiper-slide>
+                        <swiper-slide>
+                           <img src="img/02.jpg" />
+                        </swiper-slide>
+                     </swiper-container>
+                     <swiper-container class="mySwiper2" space-between="10" slides-per-view="4" free-mode="true"
+                        watch-slides-progress="true">
+                        <swiper-slide>
+                           <img src="img/01.jpg" />
+                        </swiper-slide>
+                        <swiper-slide>
+                           <img src="img/02.jpg" />
+                        </swiper-slide>
+                     </swiper-container>
                   </section>
                   <ul class="_label__list">
                      <li class="_label__item">
-                        <button class="_label__title" type="button">Дисплей</button>
+                        <button class="_label__title" type="button">
+                           <div class="_label__icon _img">
+                              <img src="img/icon1.png" alt="">
+                           </div>
+                           Описание
+                        </button>
                         <div class="_label__description _active">
                            <ul class="_label__list-description">
                               <li class="_label__item-description">
-                                 <p>Тип дисплея</p>
-                                 <p>Super Retina XDR (OLED)</p>
-                              </li>
-                              <li class="_label__item-description">
-                                 <p>Диагональ (дюйм)</p>
-                                 <p>6.1</p>
-                              </li>
-                              <li class="_label__item-description">
-                                 <p>Разрешение (пикс)</p>
-                                 <p>2532x1170</p>
+                                 Gorizont Hybrid vision — это современная модель щетки, она сочетает в себе основные преимущества каркасных и бескаркасных моделей щеток стеклоочистителя. Новейшие технологии изготовления обеспечивают этой модели оптимальное давление, за счет использования нескольких точек прижима, что в свою очередь обеспечивает плотное, равномерное прилегание чистящей кромки к лобовому стеклу. Корпус щетки скрыт за прочным кожухом, изготовленным из качественных ABS материалов, который предотвращает попадание снега, наледи, пыли и обеспечивает возможность всесезонной эксплуатации щетки при любых погодных условиях. Совокупность всех вышеперечисленных достоинств данной модели и использование только натуральных, высококачественных материалов гарантированно обеспечит превосходную очистку вашего лобового стекла и увеличит срок службы дворников, а современный внешний вид и аэродинамический дизайн приятно дополнит экстерьер вашего авто.
                               </li>
                            </ul>
                         </div>
                      </li>
                      <li class="_label__item">
-                        <button class="_label__title" type="button">Дисплей</button>
+                        <button class="_label__title" type="button">
+                           <div class="_label__icon _img">
+                              <img src="img/icon2.png" alt="">
+                           </div>
+                           Размерный ряд
+                        </button>
                         <div class="_label__description">
                            <ul class="_label__list-description">
-                              <li class="_label__item-description">
-                                 <p>Тип дисплея</p>
-                                 <p>Super Retina XDR (OLED)</p>
-                              </li>
-                              <li class="_label__item-description">
-                                 <p>Диагональ (дюйм)</p>
-                                 <p>6.1</p>
-                              </li>
-                              <li class="_label__item-description">
-                                 <p>Разрешение (пикс)</p>
-                                 <p>2532x1170</p>
-                              </li>
+                              <div class="_label__list-img">
+                                 <img src="img/Hybrid-size.jpg" alt="">
+                              </div>
                            </ul>
                         </div>
                      </li>
                      <li class="_label__item">
-                        <button class="_label__title" type="button">Дисплей</button>
+                        <button class="_label__title" type="button">
+                           <div class="_label__icon _img">
+                              <img src="img/icon3.png" alt="">
+                           </div>
+                           Комплектация
+                        </button>
                         <div class="_label__description">
                            <ul class="_label__list-description">
                               <li class="_label__item-description">
-                                 <p>Тип дисплея</p>
-                                 <p>Super Retina XDR (OLED)</p>
+                                 Стандартный тип крепления U-Hook 8,7*7mm и 9*11mm обеспечивает применяемость более чем к 95% моделей современных легковых автомобилей.
                               </li>
-                              <li class="_label__item-description">
-                                 <p>Диагональ (дюйм)</p>
-                                 <p>6.1</p>
-                              </li>
-                              <li class="_label__item-description">
-                                 <p>Разрешение (пикс)</p>
-                                 <p>2532x1170</p>
-                              </li>
+                              <div class="_label__list-img">
+                                 <img src="img/adapter-3.jpg" alt="">
+                              </div>
                            </ul>
                         </div>
                      </li>
