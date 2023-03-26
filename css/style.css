@@ -122,46 +122,6 @@
   margin-left: 30px;
 }
 
-.footer {
-  padding: 20px 0;
-}
-.footer__container {
-  border-top: 2px solid rgba(77, 76, 76, 0.788);
-  padding-top: 40px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-.footer__menu {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-.footer__menu-item:not(:last-child) {
-  margin-right: 20px;
-}
-.footer__menu-item a {
-  color: rgb(44, 44, 44);
-  font-size: 19px;
-  font-weight: 900;
-  line-height: 24px;
-}
-.footer__menu-item a:hover {
-  color: #29ABE2;
-}
-.footer__menu-item a._active {
-  color: #2D4961;
-}
-.footer__menu-item a._active-color {
-  color: #fff;
-}
-
 .catalog__title {
   text-align: center;
   margin-top: 60px;
@@ -187,6 +147,31 @@
   padding: 10px;
   background-color: #00CCFF;
   color: #fff;
+}
+
+.product__list {
+  margin-top: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.product__list-item {
+  max-width: 400px;
+}
+.product__list-content {
+  max-width: 400px;
+  display: block;
+  border: 1px solid blue;
+}
+.product__list-content_zoom {
+  margin-top: 20px;
+  margin-right: 20px;
+  display: block;
+  max-width: 30px;
+  margin-left: auto;
 }
 
 .contacts__wrap {
@@ -312,6 +297,46 @@
 }
 ._label__item-description:last-child {
   padding-bottom: 30px;
+}
+
+.footer {
+  padding: 20px 0;
+}
+.footer__container {
+  border-top: 2px solid rgba(77, 76, 76, 0.788);
+  padding-top: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.footer__menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.footer__menu-item:not(:last-child) {
+  margin-right: 20px;
+}
+.footer__menu-item a {
+  color: rgb(44, 44, 44);
+  font-size: 19px;
+  font-weight: 900;
+  line-height: 24px;
+}
+.footer__menu-item a:hover {
+  color: #29ABE2;
+}
+.footer__menu-item a._active {
+  color: #2D4961;
+}
+.footer__menu-item a._active-color {
+  color: #fff;
 }
 
 @media (max-width: 992px) {
