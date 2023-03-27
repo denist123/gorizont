@@ -1,10 +1,3 @@
-let title = () => {
-   let title = document.querySelector('title'),
-      menuItemActive = document.querySelector('.header__menu > .header__menu-item > ._active');
-      title.textContent = menuItemActive.textContent;
-}
-title();
-
 let burger = () => {
    const menuBurger = document.querySelector('.header__burger');
    const footerMenuBurger = document.querySelector('.footer__burger');

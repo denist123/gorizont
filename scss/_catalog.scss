@@ -7,9 +7,11 @@
    &__list{
       margin-top: 60px;
       display: flex;
-      justify-content: center;
+      justify-content: space-between;
       align-items: center;
+      flex-wrap: wrap;
       &-item{
+         margin-bottom: 30px;
          &:not(:last-child){
             margin-right: 30px;
          }
