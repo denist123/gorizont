@@ -29,9 +29,9 @@
   margin-right: 20px;
 }
 .header__menu-item a {
-  color: #ececec;
+  color: rgb(44, 44, 44);
   font-size: 19px;
-  font-weight: 900;
+  font-weight: 500;
   line-height: 24px;
 }
 .header__menu-item a:hover {
@@ -122,6 +122,9 @@
   margin-left: 30px;
 }
 
+.catalog {
+  margin-bottom: 60px;
+}
 .catalog__title {
   text-align: center;
   margin-top: 60px;
@@ -150,28 +153,113 @@
 }
 
 .product__list {
-  margin-top: 40px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.product__list-item {
+  max-width: 500px;
+}
+.product__list-item:first-child {
+  margin-right: 70px;
+  width: 300px;
+  height: 200px;
+}
+.product__list-item:last-child {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
-.product__list-item {
-  max-width: 400px;
-}
 .product__list-content {
-  max-width: 400px;
   display: block;
-  border: 1px solid blue;
+  width: 100%;
+  height: 100%;
+  border: 2px solid #E8E8E8;
+  position: relative;
 }
 .product__list-content_zoom {
-  margin-top: 20px;
-  margin-right: 20px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
   display: block;
   max-width: 30px;
   margin-left: auto;
+}
+.product__list-content img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.product__list-text {
+  color: #808183;
+  line-height: 17px;
+}
+.product__list-title {
+  margin-bottom: 15px;
+  font-size: 30px;
+  color: #808183;
+  font-weight: 200;
+}
+.product__list-btn {
+  padding: 5px 10px;
+  margin-top: 10px;
+  background-color: #00CCFF;
+  color: #fff;
+  font-size: 16px;
+  display: block;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  font-weight: 400;
+}
+
+._line {
+  margin: 60px 0;
+  -webkit-box-shadow: 8px 7px 14px 7px rgba(34, 60, 80, 0.2);
+          box-shadow: 8px 7px 14px 7px rgba(34, 60, 80, 0.2);
+  padding: 10px 0;
+  background-image: url("https://gorizont-wipers.ru/wp-content/uploads/2015/02/header_bg-1.jpg");
+}
+._line .header__logo {
+  max-width: 110px;
+}
+
+.two {
+  display: block;
+  max-width: 300px;
+  padding: 20px;
+  margin: 0 auto;
+  text-align: center;
+  background-color: #E8E8E8;
+  border-radius: 10px;
+  -webkit-box-shadow: 8px 7px 14px 7px rgba(34, 60, 80, 0.2);
+          box-shadow: 8px 7px 14px 7px rgba(34, 60, 80, 0.2);
+}
+.two .product__list-item:first-child {
+  margin-right: 0;
+  margin-bottom: 20px;
+  width: 100%;
+  height: 100%;
+}
+.two__text {
+  line-height: 21px;
+}
+.two__title {
+  line-height: 35px;
+}
+.two .product__list-btn {
+  margin: 20px auto 0 auto;
 }
 
 .contacts__wrap {
@@ -215,6 +303,7 @@
 }
 ._label__slider {
   max-width: 400px;
+  height: 400px;
 }
 ._label__list {
   max-width: 500px;
@@ -326,7 +415,7 @@
 .footer__menu-item a {
   color: rgb(44, 44, 44);
   font-size: 19px;
-  font-weight: 900;
+  font-weight: 500;
   line-height: 24px;
 }
 .footer__menu-item a:hover {
