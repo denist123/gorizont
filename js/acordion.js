@@ -1,18 +1,1 @@
-let accordeon = () => {
-   const chItems = document.querySelectorAll('._label__item');
-   chItems.forEach(item => {
-      const chButton = item.querySelector('._label__title');
-      const chContent = item.querySelector('._label__description');
-      
-      chButton.addEventListener('click', () => {
-         chItems.forEach(item => {
-            const chContent2 = item.querySelector('._label__description');
-            chContent2.classList.remove('_active');
-            chContent2.style.height = '';
-         })
-         chContent.classList.remove('_active');
-         chContent.style.height = chContent.scrollHeight + 'px';
-      })
-   })
-}
-accordeon();
+let accordeon=()=>{const e=document.querySelectorAll("._label__item");e.forEach((t=>{const c=t.querySelector("._label__title"),l=t.querySelector("._label__description");c.addEventListener("click",(()=>{e.forEach((e=>{const t=e.querySelector("._label__description");t.classList.remove("_active"),t.style.height=""})),l.classList.remove("_active"),l.style.height=l.scrollHeight+"px"}))}))};accordeon();

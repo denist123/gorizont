@@ -1,13 +1,1 @@
-const swiper = new Swiper('.swiper', {
-   loop: true,
-   navigation: {
-     nextEl: '.swiper-button-next',
-     prevEl: '.swiper-button-prev',
-   },
-   spaceBetween: 32,
-   autoplay: {
-      delay: 6000,
-      disableOnInteraction: false
-   },
-   speed: 500,
-});
+const swiper=new Swiper(".swiper",{loop:!0,navigation:{nextEl:".swiper-button-next",prevEl:".swiper-button-prev"},spaceBetween:32,autoplay:{delay:6e3,disableOnInteraction:!1},speed:500});
